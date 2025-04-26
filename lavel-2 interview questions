@@ -1,1 +1,119 @@
+1. What is Dependency Injection in Laravel?
+Answer: Dependency Injection means ek class doosri class ko direct provide karti hai jo use chahiye.
+Explanation: Socho tumhara ghar ka remote control kharab ho gaya. Tum apne electrician ko bulaate ho directly kaam ke liye — yahi Dependency Injection hai, jo kaam chahiye, wo direct mil jaata hai.
 
+2. What is Service Provider in Laravel?
+Answer: Service Provider Laravel ka ek special file hoti hai jo sab important settings aur services ko ready karti hai.
+Explanation: Jaise ghar ka main switch board, jisse sab light, fan start hote hain, waise hi service providers Laravel ko ready karte hain.
+
+3. What are Facades in Laravel?
+Answer: Facade Laravel mein ek shortcut hai jisse hum bina object banaye service ya function use kar sakte hain.
+Explanation: Jaise tumhara mobile ek button se camera on karta hai, waise Facade ek easy way hai complex code ko simple karne ka.
+
+4. What is Event and Listener in Laravel?
+Answer: Event kuch hone par ek message bhejta hai aur Listener us message ko sun kar kuch kaam karta hai.
+Explanation: Jaise school mein bell bajti hai (event) aur sab students class chhodte hain (listener reaction).
+
+5. What is Queues in Laravel?
+Answer: Queue ek system hai jisme heavy kaam background mein chalta hai, jaise email bhejna.
+Explanation: Jaise jab restaurant mein tumhara order pehle line mein lagta hai aur baad mein serve hota hai, waise hi Queue mein kaam hota hai.
+
+6. What is Job in Laravel?
+Answer: Job ek small task hai jo background mein queue ke through complete hota hai.
+Explanation: Jaise courier company ka ek packet deliver karne ka kaam — ye ek "job" hai.
+
+7. What is Middleware Kernel?
+Answer: Kernel ek file hai jahan sab Middleware (rules) Laravel ke liye set hote hain.
+Explanation: Jaise ek security guard gate par sabko check karta hai, waise Middleware request check karta hai.
+
+8. What is API Resource in Laravel?
+Answer: API Resource help karta hai humare data ko ek achhe, clean tarike se JSON format mein dikhane mein.
+Explanation: Jaise tum apne dosto ko ek photo achhe frame mein dekar present karte ho — waise hi data ko achhe frame mein API Resource deta hai.
+
+9. How to upload file in Laravel?
+Answer: File ko hum request se lete hain aur store() ya move() function ka use karke server par save karte hain.
+Explanation: Jaise tum mobile se photo gallery mein ek photo save karte ho, waise Laravel mein file save hoti hai.
+
+10. What is Validation in Laravel?
+Answer: Validation check karta hai ki user se jo data mila hai wo sahi hai ya nahi.
+Explanation: Jaise exam mein teacher check karta hai ki answer sahi likha hai ya nahi, waise Validation form data ko check karta hai.
+
+11. What is Seeder in Laravel?
+Answer: Seeder ka kaam database mein testing data bharna hota hai.
+Explanation: Jaise tum game mein "practice mode" ke liye fake players add karte ho, waise Seeder database mein fake data daalta hai.
+
+12. What is Migration in Laravel?
+Answer: Migration ek file hoti hai jisme database ka design likhte hain.
+Explanation: Jaise ek building ka map banta hai pehle, waise database ka map migration mein banta hai.
+
+13. What is Eloquent ORM in Laravel?
+Answer: Eloquent ORM se hum database ke saath easy aur fast tarike se kaam kar sakte hain.
+Explanation: Jaise Google Maps se shortcut rasta milta hai, waise Eloquent se database kaam easy ho jaata hai.
+
+14. What is Route in Laravel?
+Answer: Route decide karta hai ki user ke request par kaunsa page ya data milega.
+Explanation: Jaise ek hotel mein menu ke hisaab se waiter food lata hai, waise route request ke hisaab se response deta hai.
+
+15. What is Named Route?
+Answer: Named Route ek special naam deta hai kisi route ko, jisse use karna easy hota hai.
+Explanation: Jaise tum apne dost ko nickname se bulate ho, waise Laravel mein route ko shortcut naam se bulaya jaata hai.
+
+16. What is Route Grouping?
+Answer: Route Grouping mein ek jaise routes ko ek group mein rakhte hain taaki code clean rahe.
+Explanation: Jaise school ke students ko class ke hisaab se group banake bithate hain, waise routes ko group kiya jaata hai.
+
+17. What is Authentication?
+Answer: Authentication ka matlab hota hai check karna ki user kaun hai.
+Explanation: Jaise office ke gate par ID card check hota hai, waise website mein login authentication hota hai.
+
+18. What is Authorization?
+Answer: Authorization check karta hai ki user kis cheez ka access rakh sakta hai.
+Explanation: Jaise school mein kuch rooms sirf teachers ke liye hote hain, waise Authorization permissions set karta hai.
+
+19. What is CSRF Token in Laravel?
+Answer: CSRF token ek security system hai jo fake form submissions se website ko bachata hai.
+Explanation: Jaise tum apne bag mein lock lagate ho, waise website mein CSRF token security lagata hai.
+
+20. What is Blade Template Engine?
+Answer: Blade ek template engine hai jisse HTML aur PHP ko mix karke easy aur clean code likha ja sakta hai.
+Explanation: Jaise tum diary mein likhne ke liye alag sections banate ho, waise Blade templates mein code manage hota hai.
+
+21. What is Artisan in Laravel?
+Answer: Artisan ek command line tool hai jo Laravel ke kaam fast aur easy banata hai.
+Explanation: Jaise ek magic wand sab kaam aasaan kar deta hai, waise artisan command se hum fast kaam karte hain.
+
+22. What is Controller in Laravel?
+Answer: Controller user ke request ko handle karta hai aur correct response deta hai.
+Explanation: Jaise ek receptionist visitor ko sahi department mein bhejta hai, waise Controller user ke request ka jawab tay karta hai.
+
+23. What is Relationship in Laravel?
+Answer: Relationship ka matlab hai database ke tables ke beech connection banana.
+Explanation: Jaise ek family mein mother, father aur kids ke beech relation hota hai, waise hi database tables ke beech bhi relation banta hai.
+
+24. What is Soft Delete in Laravel?
+Answer: Soft delete mein data database mein hi rehta hai, par delete dikhaayi deta hai.
+Explanation: Jaise tum gallery se photo "delete" karte ho par wo recently deleted folder mein rehta hai, waise hi soft delete hota hai.
+
+25. What is Mutator and Accessor in Laravel?
+Answer: Mutator save karte waqt data change karta hai, aur Accessor retrieve karte waqt data change karta hai.
+Explanation: Jaise jab gift pack karte hain to wrap karte hain (mutate) aur kholte waqt naya dikhai deta hai (access).
+
+26. What is Laravel Sanctum?
+Answer: Laravel Sanctum API authentication ke liye simple aur secure method deta hai.
+Explanation: Jaise kisi app mein PIN code ya fingerprint use hota hai login ke liye, waise Sanctum secure karne mein help karta hai.
+
+27. What is Cache in Laravel?
+Answer: Cache ek temporary memory hai jisme data rakha jaata hai taaki fast access ho.
+Explanation: Jaise tum mobile ka screenshot lete ho taaki baar-baar webpage kholna na pade, waise hi cache kaam karta hai.
+
+28. What is Laravel Broadcasting?
+Answer: Broadcasting se Laravel mein real-time notifications aur updates bheje ja sakte hain.
+Explanation: Jaise WhatsApp mein message aate hi notification milta hai, waise Broadcasting se app mein live updates milte hain.
+
+29. What is Session in Laravel?
+Answer: Session temporary data ko store karta hai jab tak user website par active hota hai.
+Explanation: Jaise tum shopping cart mein saman jama karte ho jab tak checkout nahi karte, waise Session data rakhta hai.
+
+30. What is Laravel Telescope?
+Answer: Telescope ek debug tool hai jo Laravel ke internal actions ko dekhne mein madad karta hai.
+Explanation: Jaise CCTV se dekhte ho kaun aa raha hai jaa raha hai, waise Telescope developer ko sab activities dikhata hai.
