@@ -1,0 +1,334 @@
+PHP:
+What is PHP?
+
+Answer: PHP is a server-side scripting language used for web development to create dynamic web pages.
+
+What are the main data types in PHP?
+
+Answer: PHP supports scalar types like String, Integer, Float, Boolean, and compound types like Array, Object, NULL, and Resource.
+
+How do you create a variable in PHP?
+
+Answer: You create a variable in PHP using the $ symbol, followed by the variable name.
+
+php
+Copy
+Edit
+$name = "John";
+What is the difference between echo and print in PHP?
+
+Answer: echo can output multiple strings, while print can only output one string and returns 1, which makes it usable in expressions.
+
+How do you define a constant in PHP?
+
+Answer: You can define a constant using the define() function.
+
+php
+Copy
+Edit
+define("SITE_NAME", "MyWebsite");
+Explain the difference between GET and POST methods in PHP.
+
+Answer: GET sends data through the URL, while POST sends data through the HTTP request body, making POST more secure for sensitive data.
+
+What is an array in PHP?
+
+Answer: An array is a data structure that holds multiple values in a single variable.
+
+php
+Copy
+Edit
+$arr = array(1, 2, 3, 4);
+What is a session in PHP?
+
+Answer: A session is used to store information (like user data) across different pages. You start a session with session_start().
+
+What is the difference between include and require in PHP?
+
+Answer: include generates a warning if the file is not found, while require causes a fatal error and stops the script.
+
+What are cookies in PHP?
+
+Answer: Cookies are small files stored on the client-side that hold data such as user preferences. You can set them using the setcookie() function.
+
+JavaScript:
+What is JavaScript?
+
+Answer: JavaScript is a high-level, interpreted programming language used for creating interactive effects within web browsers.
+
+What is a variable in JavaScript?
+
+Answer: A variable in JavaScript stores data that can be used later. You can create a variable using var, let, or const.
+
+javascript
+Copy
+Edit
+let name = "John";
+What is the difference between let, const, and var?
+
+Answer:
+
+var: Function-scoped and can be redeclared.
+
+let: Block-scoped and can be reassigned.
+
+const: Block-scoped and cannot be reassigned.
+
+Explain NaN in JavaScript.
+
+Answer: NaN stands for "Not-a-Number." It is a special value that indicates an invalid or unrepresentable number.
+
+What are functions in JavaScript?
+
+Answer: A function is a block of reusable code that performs a specific task. You can define a function with function keyword.
+
+javascript
+Copy
+Edit
+function greet() {
+  console.log("Hello");
+}
+What is an event in JavaScript?
+
+Answer: An event is an action that can be triggered by the user, such as clicking a button or pressing a key.
+
+What is a promise in JavaScript?
+
+Answer: A promise is an object that represents the eventual completion (or failure) of an asynchronous operation.
+
+What are arrays in JavaScript?
+
+Answer: Arrays are special types of objects that hold multiple values, accessed by an index.
+
+javascript
+Copy
+Edit
+let arr = [1, 2, 3, 4];
+What is the this keyword in JavaScript?
+
+Answer: The this keyword refers to the object that is currently executing the code.
+
+What is a callback function in JavaScript?
+
+Answer: A callback function is a function passed into another function as an argument to be executed later.
+
+MySQL:
+What is MySQL?
+
+Answer: MySQL is a relational database management system that uses SQL (Structured Query Language) to store and manage data.
+
+What is a database in MySQL?
+
+Answer: A database is a collection of organized data. In MySQL, databases are created using the CREATE DATABASE command.
+
+What is a table in MySQL?
+
+Answer: A table is a structure that stores data in rows and columns in a database.
+
+What is a primary key in MySQL?
+
+Answer: A primary key is a unique identifier for each record in a database table.
+
+What is the SELECT statement in MySQL?
+
+Answer: The SELECT statement is used to query data from a database.
+
+sql
+Copy
+Edit
+SELECT * FROM table_name;
+What is a JOIN in MySQL?
+
+Answer: JOIN is used to combine rows from two or more tables based on a related column between them.
+
+What is an index in MySQL?
+
+Answer: An index is used to speed up the retrieval of data from a table by creating a quick lookup path.
+
+What is normalization in MySQL?
+
+Answer: Normalization is the process of organizing a database to reduce redundancy and dependency.
+
+What is a foreign key in MySQL?
+
+Answer: A foreign key is a field in one table that links to the primary key of another table.
+
+What is the GROUP BY clause in MySQL?
+
+Answer: The GROUP BY clause is used to group rows that have the same values in specified columns.
+
+sql
+Copy
+Edit
+SELECT COUNT(*), city FROM customers GROUP BY city;
+jQuery:
+What is jQuery?
+
+Answer: jQuery is a fast, small, and feature-rich JavaScript library that simplifies tasks like DOM manipulation, event handling, and AJAX.
+
+How do you include jQuery in a project?
+
+Answer: You can include jQuery by adding a <script> tag to your HTML file that links to a CDN or local file.
+
+html
+Copy
+Edit
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+What is the purpose of the .ready() function in jQuery?
+
+Answer: The .ready() function ensures that the DOM is fully loaded before running JavaScript code.
+
+javascript
+Copy
+Edit
+$(document).ready(function() {
+  alert("Page is ready!");
+});
+How do you hide an element using jQuery?
+
+Answer: Use the .hide() method to hide an element.
+
+javascript
+Copy
+Edit
+$('#elementID').hide();
+What is the .on() method in jQuery?
+
+Answer: The .on() method is used to attach an event handler to an element.
+
+javascript
+Copy
+Edit
+$('#button').on('click', function() {
+  alert("Button clicked!");
+});
+What is the .ajax() method in jQuery?
+
+Answer: The .ajax() method is used to perform asynchronous HTTP (AJAX) requests.
+
+javascript
+Copy
+Edit
+$.ajax({
+  url: "file.php",
+  method: "GET",
+  success: function(response) {
+    console.log(response);
+  }
+});
+How do you select elements in jQuery?
+
+Answer: You can select elements by ID, class, or other selectors using the $() function.
+
+javascript
+Copy
+Edit
+$('#myElement'); // by ID
+$('.myClass');   // by class
+What is the .each() function in jQuery?
+
+Answer: The .each() function iterates over a collection of elements and applies a function to each element.
+
+javascript
+Copy
+Edit
+$('li').each(function() {
+  console.log($(this).text());
+});
+How do you add a class to an element in jQuery?
+
+Answer: Use the .addClass() method to add a class to an element.
+
+javascript
+Copy
+Edit
+$('#element').addClass('newClass');
+How do you perform animation in jQuery?
+
+Answer: jQuery provides several methods like .fadeIn(), .fadeOut(), .slideUp(), etc., to animate elements.
+
+javascript
+Copy
+Edit
+$('#element').fadeOut();
+OOP (Object-Oriented Programming):
+What is OOP?
+
+Answer: OOP is a programming paradigm based on objects and classes, where data and functions are bundled together.
+
+What is a class in OOP?
+
+Answer: A class is a blueprint for creating objects. It defines properties and methods.
+
+php
+Copy
+Edit
+class Car {
+  public $color;
+  public function drive() {
+    echo "Driving";
+  }
+}
+What is an object in OOP?
+
+Answer: An object is an instance of a class that contains real data.
+
+php
+Copy
+Edit
+$myCar = new Car();
+$myCar->color = "Red";
+What is inheritance in OOP?
+
+Answer: Inheritance allows a class to use methods and properties of another class.
+
+php
+Copy
+Edit
+class Vehicle {
+  public $speed;
+}
+
+class Car extends Vehicle {
+  public function drive() {
+    echo "Driving at " . $this->speed . " km/h";
+  }
+}
+What is polymorphism in OOP?
+
+Answer: Polymorphism allows methods to have different implementations based on the object.
+
+What is encapsulation in OOP?
+
+Answer: Encapsulation is the concept of bundling data and methods within a class and restricting direct access to them.
+
+What is abstraction in OOP?
+
+Answer: Abstraction is hiding complex implementation details and showing only the necessary functionality.
+
+What is a constructor in OOP?
+
+Answer: A constructor is a special method used to initialize an object when it's created.
+
+php
+Copy
+Edit
+class Car {
+  public function __construct($color) {
+    $this->color = $color;
+  }
+}
+What is a destructor in OOP?
+
+Answer: A destructor is a special method used to clean up the object when it is destroyed.
+
+What is an interface in OOP?
+
+Answer: An interface defines a contract that a class must follow by implementing its methods.
+
+php
+Copy
+Edit
+interface Vehicle {
+  public function drive();
+}
