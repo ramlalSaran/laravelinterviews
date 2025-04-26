@@ -1,0 +1,261 @@
+PHP (Level 2):
+What is the difference between == and === in PHP?
+
+Answer: == checks for equality of values, while === checks for both value and type equality.
+
+How can you prevent SQL injection in PHP?
+
+Answer: Use prepared statements and parameterized queries with PDO or mysqli to prevent SQL injection.
+
+What is a trait in PHP?
+
+Answer: A trait is a mechanism for code reuse in single inheritance languages. It allows you to include methods from one class into another without using inheritance.
+
+How does PHP handle error reporting?
+
+Answer: PHP uses error_reporting() to control which errors are reported. You can set it to E_ALL to report all errors, or use ini_set('display_errors', 1) to display errors on the browser.
+
+What is the difference between include and require in PHP?
+
+Answer: Both are used to include files, but include produces a warning if the file is not found, while require produces a fatal error and stops execution.
+
+How can you manage sessions in PHP?
+
+Answer: Use session_start() at the beginning of a script to start a session, then store session variables using the $_SESSION superglobal.
+
+What is the use of the header() function in PHP?
+
+Answer: The header() function is used to send raw HTTP headers to the browser. It can be used for redirection or setting content type.
+
+What are magic methods in PHP?
+
+Answer: Magic methods are special methods in PHP that start with double underscores (__). Examples include __construct(), __destruct(), and __get().
+
+What are anonymous functions in PHP?
+
+Answer: Anonymous functions, also known as closures, are functions that are not bound to a name. They are often used for passing functions as arguments.
+
+How do you connect to a MySQL database in PHP?
+
+Answer: You can connect to a MySQL database using mysqli_connect() or using PDO like this:
+
+php
+Copy
+Edit
+$pdo = new PDO("mysql:host=localhost;dbname=test", "root", "");
+JavaScript (Level 2):
+What is the difference between null and undefined in JavaScript?
+
+Answer: null is an assignment value representing "no value," while undefined means a variable has been declared but not assigned a value.
+
+What is the purpose of the bind() method in JavaScript?
+
+Answer: The bind() method creates a new function that, when called, has its this keyword set to the provided value, with a given sequence of arguments.
+
+What is the difference between localStorage and sessionStorage in JavaScript?
+
+Answer: localStorage persists data across sessions, while sessionStorage only stores data for the duration of the page session.
+
+What is event delegation in JavaScript?
+
+Answer: Event delegation is the practice of attaching a single event listener to a parent element to handle events for child elements.
+
+What are closures in JavaScript?
+
+Answer: A closure is a function that retains access to its lexical scope, even when the function is executed outside that scope.
+
+Explain the difference between apply(), call(), and bind() methods in JavaScript.
+
+Answer: All three methods are used to set the value of this in a function, but:
+
+call() and apply() immediately invoke the function.
+
+bind() returns a new function without invoking it.
+
+What is the purpose of the setTimeout() and setInterval() functions?
+
+Answer: setTimeout() executes a function after a specified delay, while setInterval() repeatedly executes a function at specified intervals.
+
+What is a promise and how does it work in JavaScript?
+
+Answer: A promise represents the eventual completion or failure of an asynchronous operation. It has three states: pending, fulfilled, and rejected.
+
+What is the difference between forEach() and map() in JavaScript?
+
+Answer: forEach() iterates over an array without returning anything, while map() creates and returns a new array based on the results of the function applied to each element.
+
+What is destructuring in JavaScript?
+
+Answer: Destructuring is a way to unpack values from arrays or objects into variables.
+
+javascript
+Copy
+Edit
+const [x, y] = [1, 2];
+const { name, age } = person;
+MySQL (Level 2):
+What is the difference between INNER JOIN and LEFT JOIN in MySQL?
+
+Answer: INNER JOIN returns records that have matching values in both tables, while LEFT JOIN returns all records from the left table and matched records from the right table, or NULL if no match is found.
+
+What is the purpose of AUTO_INCREMENT in MySQL?
+
+Answer: AUTO_INCREMENT is used to automatically generate unique numbers for primary key fields.
+
+What is the difference between WHERE and HAVING in MySQL?
+
+Answer: WHERE is used to filter rows before aggregation, while HAVING is used to filter rows after aggregation (e.g., in GROUP BY).
+
+What are stored procedures in MySQL?
+
+Answer: Stored procedures are precompiled SQL queries that can be executed repeatedly to simplify complex tasks and enhance performance.
+
+What are triggers in MySQL?
+
+Answer: Triggers are special types of stored procedures that automatically execute in response to certain events on a particular table or view.
+
+How can you optimize a query in MySQL?
+
+Answer: You can optimize queries using indexing, avoiding SELECT *, minimizing joins, using proper data types, and using EXPLAIN to analyze query execution plans.
+
+What is normalization, and why is it important in MySQL?
+
+Answer: Normalization is the process of organizing a database to reduce redundancy and improve data integrity.
+
+How can you find duplicate records in MySQL?
+
+Answer: You can find duplicate records using the GROUP BY clause and HAVING COUNT(*) > 1:
+
+sql
+Copy
+Edit
+SELECT column_name, COUNT(*) FROM table_name GROUP BY column_name HAVING COUNT(*) > 1;
+What is the LIMIT clause in MySQL?
+
+Answer: The LIMIT clause is used to specify the number of records to return in a query.
+
+sql
+Copy
+Edit
+SELECT * FROM table_name LIMIT 5;
+What is the UNION operator in MySQL?
+
+Answer: The UNION operator combines the result sets of two or more SELECT queries into a single result set, removing duplicates.
+
+jQuery (Level 2):
+How do you select an element by its class name in jQuery?
+
+Answer: Use the dot (.) notation to select elements by their class name.
+
+javascript
+Copy
+Edit
+$('.myClass');
+What is the difference between $.ajax() and $.get() in jQuery?
+
+Answer: $.ajax() provides more flexibility and options for making requests, while $.get() is a shorthand for making GET requests.
+
+How can you stop event propagation in jQuery?
+
+Answer: You can stop event propagation using the .stopPropagation() method.
+
+javascript
+Copy
+Edit
+$('#element').click(function(event) {
+  event.stopPropagation();
+});
+How do you handle AJAX success and error responses in jQuery?
+
+Answer: Use the success and error callback functions to handle responses.
+
+javascript
+Copy
+Edit
+$.ajax({
+  url: 'data.php',
+  success: function(response) {
+    console.log(response);
+  },
+  error: function() {
+    alert("Error!");
+  }
+});
+What is the difference between .show() and .fadeIn() in jQuery?
+
+Answer: .show() instantly displays an element, while .fadeIn() gradually changes the opacity to show an element with a fading effect.
+
+How can you chain jQuery methods?
+
+Answer: You can chain jQuery methods by calling multiple methods on the same element.
+
+javascript
+Copy
+Edit
+$('#element').css('color', 'red').fadeOut();
+What is the purpose of $.each() in jQuery?
+
+Answer: $.each() is used to iterate over elements, arrays, or objects in jQuery and apply a function to each element.
+
+How do you append content to an element using jQuery?
+
+Answer: Use the .append() method to insert content at the end of an element.
+
+javascript
+Copy
+Edit
+$('#element').append('<p>New Paragraph</p>');
+What is the .val() method in jQuery?
+
+Answer: The .val() method is used to get or set the value of form elements like input fields, select dropdowns, etc.
+
+What is event delegation, and why is it useful in jQuery?
+
+Answer: Event delegation is the technique of attaching a single event handler to a parent element that manages events for child elements, especially when they are dynamically added.
+
+OOP (Level 2):
+What is method overloading in OOP?
+
+Answer: Method overloading allows multiple methods with the same name but different parameters in a class.
+
+What is method overriding in OOP?
+
+Answer: Method overriding allows a subclass to provide its own implementation of a method that is already defined in its superclass.
+
+What are access modifiers in OOP?
+
+Answer: Access modifiers determine the visibility of class properties and methods. Common modifiers are public, private, and protected.
+
+What is the difference between public, private, and protected access modifiers?
+
+Answer:
+
+public: Accessible from anywhere.
+
+private: Accessible only within the class.
+
+protected: Accessible within the class and its subclasses.
+
+What is an abstract class in OOP?
+
+Answer: An abstract class cannot be instantiated directly. It serves as a blueprint for other classes, which must implement its abstract methods.
+
+What is a singleton pattern in OOP?
+
+Answer: The singleton pattern ensures that a class has only one instance and provides a global access point to that instance.
+
+What is the difference between a class and an interface in OOP?
+
+Answer: A class can provide implementation details, while an interface only defines method signatures that a class must implement.
+
+What is the purpose of the final keyword in OOP?
+
+Answer: The final keyword prevents a class from being inherited or a method from being overridden.
+
+What is multiple inheritance, and does PHP support it?
+
+Answer: Multiple inheritance allows a class to inherit from more than one class. PHP does not support multiple inheritance directly, but it can be achieved through traits.
+
+What is the difference between composition and inheritance in OOP?
+
+Answer: Inheritance represents "is-a" relationships, while composition represents "has-a" relationships.
