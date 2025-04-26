@@ -1,119 +1,119 @@
-1. What is Dependency Injection in Laravel?
-Answer: Dependency Injection ka matlab hai kisi class ka object dusre class ke andar automatically inject karna.
-Explanation: Jaise ghar mein plumber ko bula kar kaam karwaate hain, waise Laravel automatically needed objects provide karta hai.
+1. What is Laravel Octane?
+Answer: Octane Laravel ka performance booster hai jo Swoole ya RoadRunner server ka use karta hai.
+Explanation: Jaise gadi mein turbo lagate hain speed ke liye, waise Octane speed badhata hai.
 
-2. What is Laravel Middleware Priority?
-Answer: Middleware Priority batata hai kis order mein middlewares execute honge.
-Explanation: Jaise khana pehle banana, phir serve karna, waise hi kuch kaam pehle aur kuch baad mein hota hai.
+2. What is RoadRunner in Laravel?
+Answer: RoadRunner ek super fast PHP server hai jo Laravel apps ko zyada fast run karwata hai.
+Explanation: Jaise bullet train normal train se fast hoti hai.
 
-3. What is Laravel Custom Middleware?
-Answer: Custom middleware se hum apne khud ke request filters bana sakte hain.
-Explanation: Jaise security guard apne rules set karta hai ki kaun andar jaayega, waise hi middleware custom rules banata hai.
+3. What are Coroutine in Laravel Octane?
+Answer: Coroutine ek technique hai jisme multiple tasks ek saath run karte hain bina blocking ke.
+Explanation: Jaise ek haath se chai aur dusre se phone sambhalna.
 
-4. Explain Laravel's Service Provider Boot Method.
-Answer: Boot method woh jagah hai jahan service provider ke andar runtime ke kaam likhe jaate hain.
-Explanation: Jaise car start hone ke baad headlight auto on hota hai, waise hi boot ke kaam app ke start hote hi run hote hain.
+4. Explain Laravel Livewire.
+Answer: Livewire se hum PHP ke through directly dynamic UI banate hain bina JavaScript likhe.
+Explanation: Jaise magic se bina hath hilaaye kaam ho jaaye.
 
-5. What is the Difference between Singleton and Bind in Service Container?
-Answer: Singleton ek baar object banata hai aur reuse karta hai, Bind har baar naya object banata hai.
-Explanation: Jaise ek hi water bottle ko baar baar refill karte ho (singleton), ya har baar nayi bottle lete ho (bind).
+5. What is Laravel Echo?
+Answer: Echo ek tool hai real-time events ko listen karne ke liye.
+Explanation: Jaise WhatsApp mein message turant appear hota hai bina refresh ke.
 
-6. What are Laravel Jobs and Queues?
-Answer: Job ek task hota hai jo queue mein dala jaata hai, background mein run hota hai.
-Explanation: Jaise food order dena aur kitchen mein queue mein banana, waise hi jobs background mein process hote hain.
+6. How Laravel Task Scheduling Works Internally?
+Answer: Scheduler ek command schedule:run ke through cron jobs ko check karta hai aur run karta hai.
+Explanation: Jaise alarm clock har minute check karti hai time hua ya nahi.
 
-7. Explain Laravel Event Listener.
-Answer: Listener wo function hai jo event ke hone par kuch action leta hai.
-Explanation: Jaise doorbell bajne par gate open karna, waise event hone par listener kaam karta hai.
+7. How Laravel Handles Session Behind the Scene?
+Answer: Session data file, database, ya Redis mein store hota hai, aur request ke time load hota hai.
+Explanation: Jaise bag mein saman rakh ke zarurat padne par nikalte hain.
 
-8. What is Laravel API Resource?
-Answer: API Resource data ko format karne ka system hai jab API se response bhejna hota hai.
-Explanation: Jaise tum gift ko achche se wrap karte ho, waise hi Resource response ko achcha banata hai.
+8. What are Tagged Services in Laravel?
+Answer: Tagged services group of services hain jinhe ek saath access kiya ja sakta hai.
+Explanation: Jaise ek playlist mein sabhi favourite songs ek jagah.
 
-9. What is Laravel Resource Collection?
-Answer: Jab ek saath multiple resources ko return karte hain, use resource collection bolte hain.
-Explanation: Jaise ek box mein kai gifts hote hain, waise ek collection mein kai data items hote hain.
+9. What is Laravel Horizon?
+Answer: Horizon ek dashboard hai jo queues ko monitor karta hai.
+Explanation: Jaise ek CCTV camera sab kaam observe karta hai.
 
-10. What is the Difference between API Resource and Normal Collection?
-Answer: API Resource collection ko beautifully format karta hai, normal collection bas raw data deta hai.
-Explanation: Jaise ek achhi packaging aur ek simple polythene mein antar hota hai.
+10. How to Implement API Throttling in Laravel?
+Answer: API throttling middleware se limit set karte hain jaise throttle:60,1.
+Explanation: Jaise toll booth pe ek car ek waqt pe ja sakti hai.
 
-11. How to use Gates in Laravel?
-Answer: Gate simple authorization rules ko define karta hai.
-Explanation: Jaise kisi event mein VIP pass ke bina entry nahi milti, waise hi Gate authorize karta hai.
+11. What are Laravel Custom Blade Directives?
+Answer: Hum apne custom functions bana sakte hain Blade templates ke liye.
+Explanation: Jaise shortcut key create kar lena coding mein.
 
-12. What is Laravel Multi-Auth System?
-Answer: Multi-auth mein multiple user types jaise admin, user alag login system hota hai.
-Explanation: Jaise hospital mein doctor aur patient ka alag-alag entry system hota hai.
+12. What is Lazy Collection in Laravel?
+Answer: Lazy collection ek memory efficient way hai bade data set ko handle karne ka.
+Explanation: Jaise ek ek karke cheeze uthana instead of sab ek saath.
 
-13. What is Laravel Policy vs Gate?
-Answer: Policy zyada organized tarike se authorization handle karta hai, Gate simple check karta hai.
-Explanation: Jaise ek security guard (gate) aur ek full security system (policy).
+13. What is Laravel Macroable Trait?
+Answer: Macroable se hum class mein run-time pe nayi methods add kar sakte hain.
+Explanation: Jaise tum ek app mein naya feature add karte ho bina app delete kiye.
 
-14. What is Laravel Maintenance Mode?
-Answer: Maintenance mode mein app users ke liye temporarily band ho jaati hai.
-Explanation: Jaise shop renovation ke time band hoti hai.
+14. How to Use UUID instead of ID in Laravel?
+Answer: UUID ek random unique key hoti hai jo id ke badle use hoti hai.
+Explanation: Jaise kisi ko naam se nahi, special secret code se bulaana.
 
-15. What is Laravel Database Seeder?
-Answer: Seeder se database mein dummy ya default data automatically add karte hain.
-Explanation: Jaise naye ghar mein pehle se basic furniture set karna.
+15. What is Laravel Soft Deletes?
+Answer: Soft delete mein record database mein rehta hai par dikhta nahi.
+Explanation: Jaise whatsapp mein archive karna.
 
-16. What is Laravel Factories?
-Answer: Factory se test ke liye ya dummy data fast generate karte hain.
-Explanation: Jaise ek machine se ek saath kai chocolates ban jaati hain.
+16. How Laravel’s Rate Limiter Works Internally?
+Answer: Rate limiter Redis ya memory ka use karta hai hit counts track karne ke liye.
+Explanation: Jaise ek guard ke paas list hoti hai kitne log aaye.
 
-17. How Laravel Handles CSRF Token?
-Answer: CSRF token form ke sath send hota hai, server check karta hai token match hua ya nahi.
-Explanation: Jaise ATM machine mein OTP dalte ho, waise form mein token verify hota hai.
+17. What is Laravel Value Casting?
+Answer: Value casting automatic datatype set kar deta hai models mein.
+Explanation: Jaise paani ko fridge mein dalte hi woh thanda ho jaata hai.
 
-18. What is Laravel RateLimiter Facade?
-Answer: RateLimiter se request limit karte hain user ya IP ke basis pe.
-Explanation: Jaise ek party mein limited log allowed hote hain.
+18. Explain Laravel Pipeline Pattern.
+Answer: Pipeline mein multiple tasks sequence mein pass hote hain.
+Explanation: Jaise ek water pipe mein paani ka flow hota hai ek ke baad ek.
 
-19. What is Laravel Broadcasting Channels?
-Answer: Channels users aur events ke beech real-time communication set karte hain.
-Explanation: Jaise ek FM radio channel alag alag shows ke liye hota hai.
+19. What is Laravel Telescope?
+Answer: Telescope ek debugging tool hai jo request, database, events sabko monitor karta hai.
+Explanation: Jaise binocular se sab kuch clearly dekhte hain.
 
-20. How to Handle File Uploads in Laravel?
-Answer: Request se file lete hain, store function se save karte hain.
-Explanation: Jaise mobile gallery mein photo save karte ho.
+20. What is Laravel Observer?
+Answer: Observer model ke events jaise create, update, delete ko handle karta hai.
+Explanation: Jaise ek teacher har student ka homework check karta hai.
 
-21. How to Create API Rate Limit in Laravel?
-Answer: Middleware like throttle:60,1 use karke API requests per minute limit kar sakte hain.
-Explanation: Jaise ek din mein sirf 2 baar ATM se paise nikalne ki limit lagti hai.
+21. What is Eloquent Accessors and Mutators?
+Answer: Accessor jab data access karte hain modify karta hai, Mutator jab data save karte hain modify karta hai.
+Explanation: Jaise ek filter lagana jab photo open ya save karte ho.
 
-22. What is Laravel Sanctum?
-Answer: Sanctum simple token based authentication provide karta hai SPA aur mobile apps ke liye.
-Explanation: Jaise ek hotel key card sirf ek room unlock karta hai.
+22. What is Laravel Broadcasting Driver?
+Answer: Broadcasting driver jaise Pusher, Redis real-time communication ke liye use hote hain.
+Explanation: Jaise FM station ke alag alag towers.
 
-23. What is Laravel Nova?
-Answer: Nova ek admin panel banane ka premium tool hai Laravel ke liye.
-Explanation: Jaise ek ready-made dashboard business ke liye milta hai.
+23. What is Laravel API Versioning Best Practice?
+Answer: Har major API change ke liye naya version banate hain jaise /api/v1/ /api/v2/.
+Explanation: Jaise phone ka Android version 12, 13 aata hai.
 
-24. How to Handle API Exception in Laravel?
-Answer: API exceptions ko catch karte hain aur proper JSON response return karte hain.
-Explanation: Jaise ek app crash hone par message aata hai "Something went wrong."
+24. How to Build Custom Artisan Commands?
+Answer: php artisan make:command se custom CLI command create karte hain.
+Explanation: Jaise tum apna khud ka shortcut banate ho phone mein.
 
-25. What is Laravel's Purpose of Hashing Passwords?
-Answer: Hashing se password ko encrypt karte hain taaki secure rahe.
-Explanation: Jaise locker ka code secret rehta hai.
+25. What are Laravel Morph Relationships?
+Answer: Morph relationship ek table se multiple models ko relate karta hai.
+Explanation: Jaise ek post aur video dono pe comments allowed hon.
 
-26. What is Laravel's Form Request Validation?
-Answer: Form Request ek separate class hai jo form ke data ko validate karti hai.
-Explanation: Jaise exam ke answer sheet ko ek alag teacher check karta hai.
+26. What is Laravel Dynamic Relationships?
+Answer: Runtime pe relationship define karte hain, database query ke hisaab se.
+Explanation: Jaise kisi stranger ko event mein temporary dost banana.
 
-27. What is Laravel Macros for Routes?
-Answer: Macro se routes mein apne naye reusable functions add kar sakte hain.
-Explanation: Jaise ek calculator mein naye shortcuts banana.
+27. How to Optimize Laravel Application Performance?
+Answer: Cache use karo, query optimize karo, queues use karo, events defer karo.
+Explanation: Jaise exam ke time smart study karte hain syllabus pura karne ke liye.
 
-28. What is Laravel Value Objects?
-Answer: Value object ek class hoti hai jo data ko tightly pack aur represent karti hai.
-Explanation: Jaise ek gift box ke andar sab items ek hi theme ke hote hain.
+28. What is Laravel Repository Pattern?
+Answer: Repository pattern database queries ko separate rakhta hai controllers se.
+Explanation: Jaise ek secretary manager ke kaam alag handle karti hai.
 
-29. What is Laravel Versioning in API?
-Answer: API versioning se hum naye aur purane versions ek saath manage karte hain.
-Explanation: Jaise mobile app mein version 1, version 2 hota hai.
+29. Explain Laravel Contracts.
+Answer: Contract ek interface hota hai jo define karta hai service ka behavior.
+Explanation: Jaise ek agreement mein clearly likha hota hai kaun kya karega.
 
-30. How to Use Query Scopes in Laravel?
-Answer: Scope ek method hai jo frequently used queries ko reusable bana deta hai.
-Explanation: Jaise ek baar ready recipe banake baar baar banana asaan hota hai.
+30. What is Laravel Envoyer?
+Answer: Envoyer zero downtime deployment tool hai jo code push karta hai bina site down kare.
+Explanation: Jaise ek jadoo se light ka wire badalna bina light band kiye.
