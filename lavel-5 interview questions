@@ -1,1 +1,119 @@
+1. What is Dependency Injection in Laravel?
+Answer: Dependency Injection ka matlab hai kisi class ka object dusre class ke andar automatically inject karna.
+Explanation: Jaise ghar mein plumber ko bula kar kaam karwaate hain, waise Laravel automatically needed objects provide karta hai.
 
+2. What is Laravel Middleware Priority?
+Answer: Middleware Priority batata hai kis order mein middlewares execute honge.
+Explanation: Jaise khana pehle banana, phir serve karna, waise hi kuch kaam pehle aur kuch baad mein hota hai.
+
+3. What is Laravel Custom Middleware?
+Answer: Custom middleware se hum apne khud ke request filters bana sakte hain.
+Explanation: Jaise security guard apne rules set karta hai ki kaun andar jaayega, waise hi middleware custom rules banata hai.
+
+4. Explain Laravel's Service Provider Boot Method.
+Answer: Boot method woh jagah hai jahan service provider ke andar runtime ke kaam likhe jaate hain.
+Explanation: Jaise car start hone ke baad headlight auto on hota hai, waise hi boot ke kaam app ke start hote hi run hote hain.
+
+5. What is the Difference between Singleton and Bind in Service Container?
+Answer: Singleton ek baar object banata hai aur reuse karta hai, Bind har baar naya object banata hai.
+Explanation: Jaise ek hi water bottle ko baar baar refill karte ho (singleton), ya har baar nayi bottle lete ho (bind).
+
+6. What are Laravel Jobs and Queues?
+Answer: Job ek task hota hai jo queue mein dala jaata hai, background mein run hota hai.
+Explanation: Jaise food order dena aur kitchen mein queue mein banana, waise hi jobs background mein process hote hain.
+
+7. Explain Laravel Event Listener.
+Answer: Listener wo function hai jo event ke hone par kuch action leta hai.
+Explanation: Jaise doorbell bajne par gate open karna, waise event hone par listener kaam karta hai.
+
+8. What is Laravel API Resource?
+Answer: API Resource data ko format karne ka system hai jab API se response bhejna hota hai.
+Explanation: Jaise tum gift ko achche se wrap karte ho, waise hi Resource response ko achcha banata hai.
+
+9. What is Laravel Resource Collection?
+Answer: Jab ek saath multiple resources ko return karte hain, use resource collection bolte hain.
+Explanation: Jaise ek box mein kai gifts hote hain, waise ek collection mein kai data items hote hain.
+
+10. What is the Difference between API Resource and Normal Collection?
+Answer: API Resource collection ko beautifully format karta hai, normal collection bas raw data deta hai.
+Explanation: Jaise ek achhi packaging aur ek simple polythene mein antar hota hai.
+
+11. How to use Gates in Laravel?
+Answer: Gate simple authorization rules ko define karta hai.
+Explanation: Jaise kisi event mein VIP pass ke bina entry nahi milti, waise hi Gate authorize karta hai.
+
+12. What is Laravel Multi-Auth System?
+Answer: Multi-auth mein multiple user types jaise admin, user alag login system hota hai.
+Explanation: Jaise hospital mein doctor aur patient ka alag-alag entry system hota hai.
+
+13. What is Laravel Policy vs Gate?
+Answer: Policy zyada organized tarike se authorization handle karta hai, Gate simple check karta hai.
+Explanation: Jaise ek security guard (gate) aur ek full security system (policy).
+
+14. What is Laravel Maintenance Mode?
+Answer: Maintenance mode mein app users ke liye temporarily band ho jaati hai.
+Explanation: Jaise shop renovation ke time band hoti hai.
+
+15. What is Laravel Database Seeder?
+Answer: Seeder se database mein dummy ya default data automatically add karte hain.
+Explanation: Jaise naye ghar mein pehle se basic furniture set karna.
+
+16. What is Laravel Factories?
+Answer: Factory se test ke liye ya dummy data fast generate karte hain.
+Explanation: Jaise ek machine se ek saath kai chocolates ban jaati hain.
+
+17. How Laravel Handles CSRF Token?
+Answer: CSRF token form ke sath send hota hai, server check karta hai token match hua ya nahi.
+Explanation: Jaise ATM machine mein OTP dalte ho, waise form mein token verify hota hai.
+
+18. What is Laravel RateLimiter Facade?
+Answer: RateLimiter se request limit karte hain user ya IP ke basis pe.
+Explanation: Jaise ek party mein limited log allowed hote hain.
+
+19. What is Laravel Broadcasting Channels?
+Answer: Channels users aur events ke beech real-time communication set karte hain.
+Explanation: Jaise ek FM radio channel alag alag shows ke liye hota hai.
+
+20. How to Handle File Uploads in Laravel?
+Answer: Request se file lete hain, store function se save karte hain.
+Explanation: Jaise mobile gallery mein photo save karte ho.
+
+21. How to Create API Rate Limit in Laravel?
+Answer: Middleware like throttle:60,1 use karke API requests per minute limit kar sakte hain.
+Explanation: Jaise ek din mein sirf 2 baar ATM se paise nikalne ki limit lagti hai.
+
+22. What is Laravel Sanctum?
+Answer: Sanctum simple token based authentication provide karta hai SPA aur mobile apps ke liye.
+Explanation: Jaise ek hotel key card sirf ek room unlock karta hai.
+
+23. What is Laravel Nova?
+Answer: Nova ek admin panel banane ka premium tool hai Laravel ke liye.
+Explanation: Jaise ek ready-made dashboard business ke liye milta hai.
+
+24. How to Handle API Exception in Laravel?
+Answer: API exceptions ko catch karte hain aur proper JSON response return karte hain.
+Explanation: Jaise ek app crash hone par message aata hai "Something went wrong."
+
+25. What is Laravel's Purpose of Hashing Passwords?
+Answer: Hashing se password ko encrypt karte hain taaki secure rahe.
+Explanation: Jaise locker ka code secret rehta hai.
+
+26. What is Laravel's Form Request Validation?
+Answer: Form Request ek separate class hai jo form ke data ko validate karti hai.
+Explanation: Jaise exam ke answer sheet ko ek alag teacher check karta hai.
+
+27. What is Laravel Macros for Routes?
+Answer: Macro se routes mein apne naye reusable functions add kar sakte hain.
+Explanation: Jaise ek calculator mein naye shortcuts banana.
+
+28. What is Laravel Value Objects?
+Answer: Value object ek class hoti hai jo data ko tightly pack aur represent karti hai.
+Explanation: Jaise ek gift box ke andar sab items ek hi theme ke hote hain.
+
+29. What is Laravel Versioning in API?
+Answer: API versioning se hum naye aur purane versions ek saath manage karte hain.
+Explanation: Jaise mobile app mein version 1, version 2 hota hai.
+
+30. How to Use Query Scopes in Laravel?
+Answer: Scope ek method hai jo frequently used queries ko reusable bana deta hai.
+Explanation: Jaise ek baar ready recipe banake baar baar banana asaan hota hai.
