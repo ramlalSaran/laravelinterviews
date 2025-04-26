@@ -1,0 +1,270 @@
+PHP (Level 3):
+What is the difference between public static function and static function in PHP?
+
+Answer: public static function is a static method that can be accessed from anywhere (outside the class), while static function is also a static method but with limited access based on visibility (e.g., private, protected).
+
+What is Dependency Injection in PHP and how is it used?
+
+Answer: Dependency Injection (DI) is a design pattern where an object's dependencies (other objects it relies on) are injected into it rather than created within the object. This improves testability and decouples the code.
+
+What are PSR standards in PHP?
+
+Answer: PHP-FIG (PHP Framework Interoperability Group) defines PSR standards, such as PSR-1 (Basic Coding Standard), PSR-2 (Coding Style Guide), and PSR-4 (Autoloading Standard), to ensure consistent coding practices across PHP libraries and frameworks.
+
+How can you prevent class inheritance in PHP?
+
+Answer: You can prevent inheritance by declaring the class as final. A final class cannot be extended.
+
+Explain the concept of autoloading in PHP.
+
+Answer: Autoloading is a mechanism in PHP where classes are automatically loaded when they are needed without explicitly requiring the file. This is typically done using spl_autoload_register() or PSR-4 autoloading.
+
+What is the use of __call() magic method in PHP?
+
+Answer: __call() is a magic method in PHP that is invoked when an inaccessible or undefined method is called on an object. It helps handle method calls dynamically.
+
+What is the difference between isset() and empty() in PHP?
+
+Answer: isset() checks if a variable is set and is not null, while empty() checks if a variable is empty (i.e., null, false, 0, "", etc.).
+
+What is the difference between include() and require() when handling file inclusion?
+
+Answer: Both include() and require() include files, but require() produces a fatal error and stops execution if the file is not found, whereas include() only issues a warning.
+
+How can you improve performance in a PHP application?
+
+Answer: You can improve performance by caching results, using opcode caching (e.g., with OPcache), optimizing database queries, using efficient data structures, and leveraging CDNs.
+
+What is the difference between PDO and mysqli in PHP?
+
+Answer: Both are database access libraries, but PDO supports multiple database types (e.g., MySQL, PostgreSQL), while mysqli is specific to MySQL databases. PDO also supports prepared statements more flexibly.
+
+JavaScript (Level 3):
+What is the purpose of the new keyword in JavaScript?
+
+Answer: The new keyword is used to create a new instance of an object from a constructor function or a class, initializing its properties and methods.
+
+What is a generator function in JavaScript, and how does it work?
+
+Answer: A generator function allows you to pause the function execution and resume it later using the yield keyword. It returns an iterator object that can be used to traverse the values.
+
+What are JavaScript Promises, and how do they work?
+
+Answer: A Promise is an object that represents the eventual completion or failure of an asynchronous operation. Promises have three states: pending, fulfilled, and rejected.
+
+Explain the event loop in JavaScript.
+
+Answer: The event loop is the mechanism that allows JavaScript to handle asynchronous operations. It runs in a single thread and processes tasks from the call stack and the event queue.
+
+What is the difference between Object.create() and class-based inheritance in JavaScript?
+
+Answer: Object.create() is used to create a new object with a specific prototype, while class-based inheritance uses the class syntax to create classes and inherit from other classes.
+
+What are map, filter, and reduce functions in JavaScript?
+
+Answer:
+
+map() creates a new array with the results of applying a function to each element.
+
+filter() creates a new array with elements that pass the test function.
+
+reduce() applies a function to reduce an array to a single value.
+
+What is the difference between synchronous and asynchronous code in JavaScript?
+
+Answer: Synchronous code executes in sequence, blocking further execution until it's complete. Asynchronous code allows other operations to run while waiting for a task to complete.
+
+What is the this keyword in JavaScript?
+
+Answer: The this keyword refers to the context in which a function is called, typically the object that owns the method. Its value can vary depending on how the function is invoked.
+
+What is the difference between let, const, and var in JavaScript?
+
+Answer:
+
+var has function scope and can be redeclared.
+
+let has block scope and can be reassigned but not redeclared.
+
+const has block scope and cannot be reassigned.
+
+How does hoisting work in JavaScript?
+
+Answer: Hoisting is a behavior in which variable and function declarations are moved to the top of their containing scope during compilation. Only the declaration is hoisted, not the initialization.
+
+MySQL (Level 3):
+What is the difference between UNION and UNION ALL in MySQL?
+
+Answer: UNION combines results from multiple SELECT queries and removes duplicates, while UNION ALL includes all results, even duplicates.
+
+How can you optimize database queries for performance in MySQL?
+
+Answer: Use indexes, optimize joins, avoid using SELECT *, limit rows returned with LIMIT, use proper data types, and analyze queries with EXPLAIN.
+
+What are the ACID properties in database management systems?
+
+Answer: ACID stands for Atomicity, Consistency, Isolation, and Durability. These properties ensure reliable transaction processing in a database.
+
+What is a foreign key in MySQL?
+
+Answer: A foreign key is a column that establishes a relationship between two tables by referring to the primary key of another table.
+
+What is the difference between CHAR and VARCHAR in MySQL?
+
+Answer: CHAR is a fixed-length string, while VARCHAR is a variable-length string. CHAR is faster for fixed-length data, while VARCHAR saves space for variable-length data.
+
+What are the differences between JOIN, LEFT JOIN, and RIGHT JOIN in MySQL?
+
+Answer:
+
+JOIN (INNER JOIN) returns matching records from both tables.
+
+LEFT JOIN returns all records from the left table and matched records from the right.
+
+RIGHT JOIN returns all records from the right table and matched records from the left.
+
+What is the purpose of the GROUP BY clause in MySQL?
+
+Answer: The GROUP BY clause groups rows that have the same values into summary rows, often used with aggregate functions like COUNT(), SUM(), etc.
+
+How can you create an index in MySQL?
+
+Answer: You can create an index using the CREATE INDEX statement:
+
+sql
+Copy
+Edit
+CREATE INDEX idx_name ON table_name(column_name);
+What are stored procedures in MySQL, and why are they useful?
+
+Answer: Stored procedures are precompiled SQL statements that can be executed multiple times. They improve performance, simplify complex tasks, and increase security by limiting direct access to the database.
+
+What is normalization, and what are the normal forms in MySQL?
+
+Answer: Normalization is the process of organizing a database to reduce redundancy. The common normal forms are:
+
+1NF (First Normal Form): No repeating groups.
+
+2NF (Second Normal Form): Remove partial dependencies.
+
+3NF (Third Normal Form): Remove transitive dependencies.
+
+jQuery (Level 3):
+What is the difference between .on() and .bind() in jQuery?
+
+Answer: .on() is more flexible and supports event delegation, while .bind() is an older method that directly attaches event handlers to elements.
+
+How do you prevent the default action of an event in jQuery?
+
+Answer: You can prevent the default action using the event.preventDefault() method:
+
+javascript
+Copy
+Edit
+$('#element').click(function(event) {
+  event.preventDefault();
+});
+What is chaining in jQuery, and how does it work?
+
+Answer: Chaining in jQuery allows you to apply multiple methods to the same element in a single statement, improving readability and efficiency.
+
+How can you toggle the visibility of an element in jQuery?
+
+Answer: You can toggle visibility using .toggle() or .fadeToggle():
+
+javascript
+Copy
+Edit
+$('#element').toggle();
+What is the .each() method in jQuery, and how is it used?
+
+Answer: .each() is used to iterate over a collection of elements, applying a function to each element.
+
+javascript
+Copy
+Edit
+$('li').each(function(index) {
+  console.log($(this).text());
+});
+How can you get the value of an input field in jQuery?
+
+Answer: Use .val() to get or set the value of input fields:
+
+javascript
+Copy
+Edit
+var inputVal = $('#inputField').val();
+What is the difference between .append() and .prepend() in jQuery?
+
+Answer: .append() adds content to the end of an element, while .prepend() adds content to the beginning.
+
+How do you remove an element from the DOM using jQuery?
+
+Answer: Use .remove() to completely remove an element:
+
+javascript
+Copy
+Edit
+$('#element').remove();
+What is event delegation in jQuery, and why is it used?
+
+Answer: Event delegation involves using a single event listener on a parent element to handle events for dynamically added child elements. It improves performance and simplifies code.
+
+How do you get the HTML content of an element in jQuery?
+
+Answer: Use .html() to get the HTML content of an element:
+
+javascript
+Copy
+Edit
+var htmlContent = $('#element').html();
+OOP (Level 3):
+What is the difference between composition and inheritance in OOP?
+
+Answer: Inheritance represents an "is-a" relationship, while composition represents a "has-a" relationship, where objects are composed of other objects.
+
+What is the Singleton Pattern in OOP?
+
+Answer: The Singleton Pattern ensures that a class has only one instance and provides a global access point to that instance.
+
+What are the SOLID principles in OOP?
+
+Answer: The SOLID principles are a set of five design principles that promote more maintainable, flexible, and scalable object-oriented systems. These principles are:
+
+S: Single Responsibility Principle
+
+O: Open/Closed Principle
+
+L: Liskov Substitution Principle
+
+I: Interface Segregation Principle
+
+D: Dependency Inversion Principle
+
+What is the Factory Method Pattern?
+
+Answer: The Factory Method Pattern defines an interface for creating objects, but allows subclasses to alter the type of objects that will be created.
+
+What is the difference between a class and an interface in OOP?
+
+Answer: A class contains both data and methods for implementing functionality, whereas an interface only defines method signatures that a class must implement.
+
+What is method chaining in OOP?
+
+Answer: Method chaining allows you to call multiple methods on the same object in a single line by returning the object itself from each method.
+
+What is the difference between abstract and final classes in OOP?
+
+Answer: An abstract class cannot be instantiated directly and can be extended, while a final class cannot be extended.
+
+What is polymorphism in OOP?
+
+Answer: Polymorphism allows objects of different classes to be treated as objects of a common superclass, typically by overriding methods.
+
+What is the purpose of the __construct() method in PHP OOP?
+
+Answer: __construct() is a special method in a class that is automatically called when an object is instantiated. It is typically used for initializing object properties.
+
+What is the difference between is_a() and instanceof in PHP?
+
+Answer: is_a() is a function that checks if an object is an instance of a class or a subclass, while instanceof is a language construct that performs the same check.
