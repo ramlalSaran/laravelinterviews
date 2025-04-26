@@ -1,1 +1,294 @@
+1. What is Laravel?
+👉 Answer:
+Laravel ek popular PHP framework hai jo websites aur web applications banana easy banata hai.
 
+👉 Explanation:
+Socho jaise ghar banane ke liye tools aur design ready milta hai, waise hi Laravel PHP programming ko faster aur secure banata hai.
+
+2. What are the features of Laravel?
+👉 Answer:
+
+MVC architecture
+
+Routing
+
+Eloquent ORM
+
+Authentication
+
+Artisan CLI
+
+Blade templating
+
+👉 Explanation:
+Laravel ke paas already sab tools ready hote hain jo ek powerful app banane ke liye chahiye.
+
+3. Who developed Laravel?
+👉 Answer:
+Taylor Otwell ne Laravel banaya.
+
+👉 Explanation:
+Taylor ek developer the jo PHP ko aur better aur developer-friendly banana chahte the.
+
+4. What is the latest stable version of Laravel?
+👉 Answer:
+2025 tak latest version hai Laravel 11.
+
+👉 Explanation:
+Laravel har saal ek naya version nikalta hai jaise software updates.
+
+5. What is Composer in Laravel?
+👉 Answer:
+Composer ek dependency manager hai PHP ka.
+
+👉 Explanation:
+Socho jaise mobile mein apps download karte ho Play Store se, waise hi Laravel ke liye Composer se packages install karte hain.
+
+6. What is MVC Architecture?
+👉 Answer:
+MVC ka full form hai: Model, View, Controller.
+
+👉 Explanation:
+
+Model: Data manage karta hai (Database).
+
+View: User ko dikhata hai (Screen).
+
+Controller: Data aur View ko connect karta hai.
+
+7. What are routes in Laravel?
+👉 Answer:
+Routes batate hain ki URL par kya hona chahiye.
+
+👉 Explanation:
+Jab tum /home ya /contact open karte ho website pe, wo kaam routes se hota hai.
+
+8. How to define a basic route in Laravel?
+👉 Answer:
+
+php
+
+
+Route::get('/home', function () {
+    return 'Welcome Home';
+});
+👉 Explanation:
+Ye route /home URL par simple text return karega.
+
+9. What is a controller in Laravel?
+👉 Answer:
+Controller ek file hoti hai jo request aur response handle karti hai.
+
+👉 Explanation:
+Socho Controller ek Traffic Police hai — decide karta hai ki user ki request kahan jaani chahiye.
+
+10. How to create a controller using Artisan command?
+👉 Answer:
+Command:
+
+bash
+
+
+php artisan make:controller HomeController
+👉 Explanation:
+Ye command ek new Controller file banayegi app/Http/Controllers folder ke andar.
+
+11. What is a Blade template engine?
+👉 Answer:
+Blade Laravel ka HTML template engine hai.
+
+👉 Explanation:
+Isme PHP aur HTML easily mix kar sakte hain bina complexity ke.
+
+12. How do you write a Blade if statement?
+👉 Answer:
+
+blade
+
+
+@if ($user == 'admin')
+    Welcome Admin!
+@endif
+👉 Explanation:
+Blade mein simple @if, @endif likhte hain instead of PHP tags.
+
+13. How to pass data from controller to view?
+👉 Answer:
+
+php
+
+
+return view('home', ['name' => 'John']);
+👉 Explanation:
+Controller se view ko data bhejne ka yeh tarika hai.
+
+14. What is a migration in Laravel?
+👉 Answer:
+Migration database ka blueprint hai.
+
+👉 Explanation:
+Socho Migration ek recipe hai database table banane ke liye.
+
+15. How do you create a migration file?
+👉 Answer:
+Command:
+
+bash
+
+
+php artisan make:migration create_users_table
+👉 Explanation:
+Ye command ek naya migration file create karegi jo database table define karega.
+
+16. How to run migrations?
+👉 Answer:
+Command:
+
+bash
+
+
+php artisan migrate
+👉 Explanation:
+Ye command sab migration files ko database mein apply karta hai.
+
+17. How to rollback migrations?
+👉 Answer:
+Command:
+
+bash
+
+
+php artisan migrate:rollback
+👉 Explanation:
+Ye recent migration ko undo karta hai (delete kar deta hai).
+
+18. What is Eloquent ORM?
+👉 Answer:
+Eloquent Laravel ka built-in ORM hai jo database se easy tarike se kaam karta hai.
+
+👉 Explanation:
+ORM matlab database rows ko PHP objects jaise use kar sakte ho.
+
+19. How to create a model in Laravel?
+👉 Answer:
+Command:
+
+bash
+
+
+php artisan make:model Post
+👉 Explanation:
+Model file banata hai jo database table ko represent karta hai.
+
+20. What is the use of php artisan serve?
+👉 Answer:
+Laravel app ko local server par chalane ke liye use hota hai.
+
+👉 Explanation:
+Without XAMPP ya Apache, Laravel khud ka server start karta hai testing ke liye.
+
+21. What are middlewares?
+👉 Answer:
+Middlewares request aur response ke beech filtering karte hain.
+
+👉 Explanation:
+Socho security check jaisa kaam karte hain middleware.
+
+22. How to create custom middleware?
+👉 Answer:
+Command:
+
+bash
+
+
+php artisan make:middleware CheckUser
+👉 Explanation:
+Custom logic ke liye tum apna middleware bana sakte ho.
+
+23. What is CSRF token?
+👉 Answer:
+Cross-Site Request Forgery token jo form submissions mein security ke liye hota hai.
+
+👉 Explanation:
+It ensures ki form trusted source se submit hua hai, not hackers.
+
+24. How to display a form in Blade?
+👉 Answer:
+
+blade
+
+
+<form method="POST" action="/save">
+    @csrf
+    <input type="text" name="name">
+    <button type="submit">Save</button>
+</form>
+👉 Explanation:
+Always @csrf lagana mandatory hai forms mein.
+
+25. How to create a resource controller?
+👉 Answer:
+Command:
+
+bash
+
+
+php artisan make:controller PostController --resource
+👉 Explanation:
+Resource controller sab CRUD (Create, Read, Update, Delete) functions bana ke deta hai ready-made.
+
+26. How to display validation errors in Blade?
+👉 Answer:
+
+blade
+
+
+@if ($errors->any())
+    <div>
+        @foreach ($errors->all() as $error)
+            {{ $error }}
+        @endforeach
+    </div>
+@endif
+👉 Explanation:
+Ye sab errors ek ek karke dikhata hai.
+
+27. What is the use of the old() helper?
+👉 Answer:
+Form ke purane input ko dikhane ke liye jab validation fail hoti hai.
+
+👉 Explanation:
+User ko dobara sab fill karna na pade, isliye old('fieldname') use karte hain.
+
+28. How to redirect to a specific route?
+👉 Answer:
+
+php
+
+
+return redirect()->route('home');
+👉 Explanation:
+User ko kisi specific page par redirect karne ke liye.
+
+29. What is the role of .env file in Laravel?
+👉 Answer:
+Environment variables store karte hain jaise DB username/password.
+
+👉 Explanation:
+Sensitive information ko safe aur easily changeable banata hai without touching code.
+
+30. How to connect Laravel with a MySQL database?
+👉 Answer:
+.env file mein ye values set karo:
+
+dotenv
+
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_database_name
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+👉 Explanation:
+Bas correct database credentials daalo .env file mein, aur Laravel connect ho jaayega.
