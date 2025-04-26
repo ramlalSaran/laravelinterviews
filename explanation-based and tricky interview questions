@@ -1,0 +1,122 @@
+PHP Questions
+What is the difference between include and require in PHP?
+
+Explanation: include generates a warning if the file is not found but the script continues, while require generates a fatal error and stops the script if the file is not found.
+
+Explain how PHP handles session data.
+
+Explanation: PHP uses session_start() to begin a session and stores session data on the server. The session ID is stored in a cookie or passed through the URL to track user sessions.
+
+What is the purpose of the final keyword in PHP?
+
+Explanation: The final keyword in PHP can be used with classes or methods to prevent them from being extended or overridden.
+
+What is dependency injection in PHP?
+
+Explanation: Dependency injection is a design pattern that allows for passing dependencies (such as objects) into a class rather than creating them within the class itself, making the code more testable and modular.
+
+What is the difference between $_GET and $_POST in PHP?
+
+Explanation: $_GET is used to collect data from URL parameters, whereas $_POST is used to collect data from a form submission and does not appear in the URL.
+
+What are magic methods in PHP? Give examples.
+
+Explanation: Magic methods in PHP are special functions that are called automatically under certain conditions. Examples include __construct(), __destruct(), __get(), __set(), and __call().
+
+Explain the concept of namespaces in PHP.
+
+Explanation: Namespaces in PHP allow for grouping logically related classes, functions, and constants to avoid name conflicts in large applications.
+
+What is the difference between public, private, and protected access modifiers?
+
+Explanation: public allows access from anywhere, private allows access only within the same class, and protected allows access within the class and subclasses.
+
+What are traits in PHP?
+
+Explanation: Traits allow for code reuse in classes. They are similar to classes but cannot be instantiated and are used to include methods in a class.
+
+Explain the concept of autoloading in PHP.
+
+Explanation: Autoloading is a mechanism where PHP automatically includes the required class file when an object of that class is instantiated, reducing the need for manual include or require statements.
+
+JavaScript Questions
+What is the difference between var, let, and const?
+
+Explanation: var is function-scoped, while let and const are block-scoped. const cannot be reassigned after initialization, while let can.
+
+What is a closure in JavaScript?
+
+Explanation: A closure is a function that remembers its lexical scope even when the function is executed outside of that scope.
+
+What is the difference between null and undefined in JavaScript?
+
+Explanation: null is a deliberate assignment of no value, while undefined means a variable has been declared but not assigned a value.
+
+What is the event delegation model in JavaScript?
+
+Explanation: Event delegation allows you to add a single event listener to a parent element, which listens for events from child elements, improving performance and memory usage.
+
+What is the this keyword in JavaScript?
+
+Explanation: this refers to the context in which the function is called. In global scope, it refers to the global object. In methods, it refers to the object the method belongs to.
+
+Explain the concept of promises in JavaScript.
+
+Explanation: A promise is an object that represents the eventual completion (or failure) of an asynchronous operation, allowing for cleaner handling of asynchronous code.
+
+What is the difference between synchronous and asynchronous code in JavaScript?
+
+Explanation: Synchronous code is executed in sequence, blocking further code execution, while asynchronous code allows other tasks to run while waiting for the completion of a long-running task (e.g., network requests).
+
+What is a callback function in JavaScript?
+
+Explanation: A callback function is a function passed as an argument to another function, which is executed once the other function has completed.
+
+What are JavaScript modules?
+
+Explanation: JavaScript modules allow you to split your code into smaller, reusable pieces. Modules can import and export code to share functionality between different parts of an application.
+
+Explain the concept of the prototype chain in JavaScript.
+
+Explanation: Every JavaScript object has a prototype object that it inherits properties and methods from. The prototype chain allows objects to access properties and methods from other objects in the chain.
+
+MySQL Questions
+What is normalization in databases?
+
+Explanation: Normalization is the process of organizing data in a database to minimize redundancy and dependency by dividing large tables into smaller ones and defining relationships between them.
+
+What is the difference between INNER JOIN, LEFT JOIN, and RIGHT JOIN?
+
+Explanation: INNER JOIN returns rows where there is a match in both tables, LEFT JOIN returns all rows from the left table and matching rows from the right table, and RIGHT JOIN returns all rows from the right table and matching rows from the left table.
+
+What is indexing in MySQL, and why is it important?
+
+Explanation: Indexing improves the speed of data retrieval operations in a database. It is used to quickly look up data without scanning the entire table.
+
+What is the difference between DELETE, TRUNCATE, and DROP in MySQL?
+
+Explanation: DELETE removes records one by one and can be rolled back, TRUNCATE removes all rows from a table but cannot be rolled back, and DROP deletes the table structure and all its data.
+
+What is a foreign key in MySQL?
+
+Explanation: A foreign key is a constraint used to link two tables, where a column in one table references the primary key of another table.
+
+Explain the concept of ACID properties in MySQL.
+
+Explanation: ACID stands for Atomicity, Consistency, Isolation, and Durability, which ensures reliable processing of database transactions.
+
+What is the difference between WHERE and HAVING in SQL?
+
+Explanation: WHERE is used to filter records before grouping, while HAVING is used to filter records after grouping.
+
+What is a stored procedure in MySQL?
+
+Explanation: A stored procedure is a precompiled collection of one or more SQL statements that can be executed as a single unit, which can improve performance and reduce repetitive code.
+
+What are subqueries in MySQL?
+
+Explanation: A subquery is a query nested inside another query. It can be used to return a single value, a set of values, or an entire result set.
+
+What is a transaction in MySQL, and how do you use it?
+
+Explanation: A transaction is a sequence of one or more SQL operations that are executed as a single unit. It ensures that either all operations succeed or none at all, preserving the integrity of the database.
