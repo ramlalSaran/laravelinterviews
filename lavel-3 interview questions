@@ -1,1 +1,119 @@
+1. What is Repository Pattern in Laravel?
+Answer: Repository pattern ek design pattern hai jo business logic aur database queries ko alag karta hai.
+Explanation: Jaise kitchen aur living room alag hote hain, waise hi Repository business aur database ka kaam alag karta hai.
 
+2. What is Laravel Contract?
+Answer: Contracts Laravel mein ek set of rules hote hain jo batate hain ki koi service kaise kaam karegi.
+Explanation: Jaise school mein rules hote hain ki sabko uniform pehna hai, waise hi Contracts set karte hain ki code kaise behave karega.
+
+3. What are Policies in Laravel?
+Answer: Policies authorization ke rules define karte hain ki user kya kar sakta hai ya nahi.
+Explanation: Jaise guard decide karta hai ki kaun office mein andar ja sakta hai, waise Policies decide karti hain user ke rights.
+
+4. What is Laravel Observer?
+Answer: Observer ek class hoti hai jo automatically kuch kaam karti hai jab database mein kuch change hota hai.
+Explanation: Jaise camera automatically motion detect karta hai, waise Observer database changes ko observe karta hai.
+
+5. What is Laravel Broadcast Driver?
+Answer: Broadcast driver real-time updates bhejne ke liye use hota hai, jaise Pusher, Redis, etc.
+Explanation: Jaise TV ka signal alag drivers (dish, cable) se aata hai, waise hi broadcast drivers use hote hain.
+
+6. What is Laravel Notification System?
+Answer: Notification system se hum emails, SMS, ya database notifications bhej sakte hain.
+Explanation: Jaise mobile mein message ya notification pop aata hai, waise Laravel notifications send karta hai.
+
+7. What is Laravel Horizon?
+Answer: Horizon ek dashboard hai jo queues aur jobs ko monitor karta hai.
+Explanation: Jaise hospital mein ek screen hoti hai jisme patients ka status dikhata hai, waise Horizon queues ka status dikhata hai.
+
+8. What is Rate Limiting in Laravel?
+Answer: Rate limiting ek system hai jo ek user kitni requests bhej sakta hai, usko control karta hai.
+Explanation: Jaise ek restaurant mein ek time mein sirf ek order lete hain, waise hi rate limit request control karta hai.
+
+9. What is Lazy Loading and Eager Loading in Laravel?
+Answer: Lazy loading mein jab zarurat hoti hai tab data load hota hai, eager loading mein pehle se load kar lete hain.
+Explanation: Jaise tum ghar se bahar jaane se pehle pura bag ready karte ho (eager) ya zarurat padne par saman lete ho (lazy).
+
+10. What is Throttling in Laravel?
+Answer: Throttling request ko limit karne ka ek aur method hai, jisse server overload nahi hota.
+Explanation: Jaise ek ek karke log lift mein jaate hain, waise throttling request control karta hai.
+
+11. What is Laravel Passport?
+Answer: Passport ek package hai jo secure API authentication ke liye OAuth2 system use karta hai.
+Explanation: Jaise airport pehchaan ke liye passport dikhana padta hai, waise API users apna passport token dikhate hain.
+
+12. What is Laravel Socialite?
+Answer: Socialite se login systems jaise Google, Facebook ka easy integration hota hai.
+Explanation: Jaise kisi party mein special pass se bina rukawat entry milti hai, waise hi Socialite login ko asaan banata hai.
+
+13. What is Laravel Macro?
+Answer: Macro se hum Laravel ke core classes mein naye functions add kar sakte hain.
+Explanation: Jaise tum apne mobile mein naye apps install karte ho, waise hi Macro se naye features add hote hain.
+
+14. What is Laravel Scout?
+Answer: Scout ek search package hai jo fast aur full-text search provide karta hai.
+Explanation: Jaise tum Google mein type karte hi suggestions milte hain, waise Scout fast search results deta hai.
+
+15. How to Schedule a Task in Laravel?
+Answer: Hum schedule() function use karke task schedule kar sakte hain, aur cron job set karte hain.
+Explanation: Jaise alarm set karte ho subah uthne ke liye, waise schedule tasks set karte hain automatic kaam ke liye.
+
+16. What is Laravel Event Broadcasting with Pusher?
+Answer: Broadcasting with Pusher real-time messages send karne ke liye hota hai jaise chat apps mein hota hai.
+Explanation: Jaise WhatsApp mein message send karte hi dusre bande ko turant milta hai, waise Broadcasting work karta hai.
+
+17. What is Laravel Mix?
+Answer: Laravel Mix ek tool hai jo CSS, JS ko compile aur optimize karta hai.
+Explanation: Jaise ek washing machine kapdon ko clean aur ready karti hai, waise hi Mix front-end files ko ready karta hai.
+
+18. What is Inertia.js in Laravel?
+Answer: Inertia.js Laravel aur Vue/React apps ko bina API banaye direct connect karta hai.
+Explanation: Jaise direct phone call karne se jaldi baat hoti hai, waise Inertia.js se server aur front-end fast connect hote hain.
+
+19. What is Laravel Fortify?
+Answer: Fortify authentication ke liye ek backend package hai jaise login, register, reset password ke features deta hai.
+Explanation: Jaise ek strong lock ghar ko secure karta hai, waise Fortify app ke login ko secure karta hai.
+
+20. What is Laravel Jetstream?
+Answer: Jetstream ek full starter kit hai authentication, team management aur profile ke saath.
+Explanation: Jaise ek poora furnished flat milta hai ready-to-live, waise Jetstream ready-to-use authentication deta hai.
+
+21. What is Laravel Breeze?
+Answer: Breeze ek simple aur light authentication starter kit hai Laravel ke liye.
+Explanation: Jaise ek chhoti lightweight bike tez chalti hai, waise Breeze chhota aur simple hai Jetstream ke comparison mein.
+
+22. What is Laravel Livewire?
+Answer: Livewire se hum PHP se hi front-end interactivity kar sakte hain bina JavaScript ke.
+Explanation: Jaise remote control se bina wire ke TV chala sakte ho, waise Livewire PHP se front-end handle karta hai.
+
+23. What is Database Transactions in Laravel?
+Answer: Transaction ek group of queries ko ek saath successfully complete karne ka system hai.
+Explanation: Jaise bank mein paisa transfer tabhi hota hai jab dono account ka process successful ho, waise hi transaction kaam karta hai.
+
+24. What is Laravel Task Scheduling Frequency Options?
+Answer: Hum tasks ko hourly, daily, weekly, ya custom frequency se run karwa sakte hain.
+Explanation: Jaise tum alarm ko daily ya weekly set karte ho, waise tasks ko timing se set kar sakte ho.
+
+25. What is Laravel Testing (Feature & Unit Test)?
+Answer: Feature test pura system check karta hai, Unit test chhoti chhoti cheeze check karta hai.
+Explanation: Jaise car ka pura test hota hai (feature) aur sirf tyre ka test hota hai (unit).
+
+26. What is Laravel Service Container?
+Answer: Service container ek system hai jo classes ko banata hai aur dependencies ko inject karta hai.
+Explanation: Jaise ek storeroom mein saman ready rehta hai use karne ke liye, waise hi service container dependencies ready rakhta hai.
+
+27. What is Laravel Service Binding?
+Answer: Service binding se hum batate hain ki service container mein kaunsi class use karni hai.
+Explanation: Jaise tum decide karte ho ki TV remote kaunsa lena hai, waise binding batata hai kaunsa service use karni hai.
+
+28. What is Laravel Custom Validation Rule?
+Answer: Custom validation se hum apne khud ke validation logic bana sakte hain.
+Explanation: Jaise apne ghar ke rule alag bana sakte ho jaise "shoes allowed nahi," waise custom validation bana sakte ho.
+
+29. What is Laravel Events Service Provider?
+Answer: EventServiceProvider event aur listener ko register karne ka place hota hai.
+Explanation: Jaise school ka timetable principal ke office mein ready hota hai, waise events EventServiceProvider mein ready hote hain.
+
+30. What is Laravel UUID?
+Answer: UUID ek unique ID hoti hai jo randomly generate hoti hai, database mein ID ke jagah use hoti hai.
+Explanation: Jaise tumhara Aadhaar number unique hota hai, waise UUID har record ke liye unique hota hai.
