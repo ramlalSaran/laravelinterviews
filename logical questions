@@ -1,0 +1,182 @@
+1. You have a database table with 100,000 rows. How would you ensure that the query to fetch specific rows is efficient?
+
+Explanation: To optimize query performance:
+
+Use indexes on columns that are frequently queried.
+
+Optimize the query by selecting only required columns instead of SELECT *.
+
+Avoid JOIN operations on large tables, or make sure they are indexed.
+
+Use pagination or limit to avoid loading too much data at once.
+
+Consider using caching to store frequently queried results.
+
+2. How would you optimize a slow Laravel application?
+
+Explanation: To optimize the performance of a Laravel application:
+
+Database indexing: Ensure that your database tables are properly indexed.
+
+Use eager loading to avoid N+1 query problems in Eloquent.
+
+Caching: Cache views, queries, and routes to speed up responses.
+
+Asset compilation: Use Laravel Mix to minify and combine JavaScript and CSS files.
+
+Queueing: Offload heavy tasks to queues to avoid slow responses for users.
+
+Profiling tools: Use Laravel Debugbar to profile and identify slow queries and code.
+
+3. You are given a large JSON object. How would you process it efficiently in PHP?
+
+Explanation: To process a large JSON object efficiently in PHP:
+
+Use the json_decode() function to convert JSON to an associative array or object.
+
+If memory is a concern, consider using json_decode() with the assoc parameter to handle the object as an array.
+
+You can use chunking to process large datasets in smaller portions.
+
+For very large files, use PHP's streaming functions or process the JSON in parts using fopen() and fgetcsv().
+
+Example:
+
+
+$handle = fopen('largefile.json', 'r');
+while (($line = fgets($handle)) !== false) {
+    $data = json_decode($line, true);
+    // Process each JSON chunk here
+}
+fclose($handle);
+4. How would you implement a caching strategy for an e-commerce application in Laravel?
+
+Explanation: To implement caching for an e-commerce application:
+
+Use Redis or Memcached for fast data storage.
+
+Cache frequent queries like product listings, categories, and user session data.
+
+Cache HTML views for pages that don’t change frequently (e.g., homepage).
+
+For cart data: Cache individual user carts with a unique key.
+
+Set cache expiration times depending on the data's freshness requirement.
+
+Use cache tags for better cache management.
+
+Example:
+
+
+Cache::tags(['products', 'category'])->put('category-1-products', $products, now()->addMinutes(10));
+5. How would you prevent a user from accessing a URL multiple times using the back button in the browser?
+
+Explanation: You can prevent users from accessing a page again by using HTTP headers. The Cache-Control header can prevent the browser from caching pages, ensuring that the back button doesn't load old pages.
+
+Example:
+
+
+return response('Content')
+    ->header('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate')
+    ->header('Pragma', 'no-cache');
+6. Suppose you have an array of integers. Write a PHP function to find the two numbers that sum up to a given target.
+
+Explanation: You can use the two-pointer technique or a hashmap to solve this efficiently.
+
+Example solution using a hashmap:
+
+
+function findTwoSum($nums, $target) {
+    $map = [];
+    foreach ($nums as $index => $num) {
+        $diff = $target - $num;
+        if (isset($map[$diff])) {
+            return [$map[$diff], $index];
+        }
+        $map[$num] = $index;
+    }
+    return null;
+}
+
+$nums = [2, 7, 11, 15];
+$target = 9;
+print_r(findTwoSum($nums, $target)); // [0, 1]
+7. How would you solve the problem of preventing multiple form submissions when a user clicks the submit button multiple times in a row?
+
+Explanation: To prevent multiple form submissions:
+
+Disable the submit button immediately after the form is submitted, either using JavaScript or jQuery.
+
+Use session variables or tokens to track if the form has been submitted previously.
+
+Example:
+
+javascript
+Copy
+Edit
+$('#submit-btn').click(function() {
+    $(this).prop('disabled', true);
+    $('#form').submit();
+});
+8. How would you implement a search feature in a Laravel application with multiple filters (like name, category, price)?
+
+Explanation: To implement a filterable search:
+
+Use Eloquent queries with where clauses for each filter.
+
+You can add a search box and checkboxes or dropdowns for each filter.
+
+Chain multiple where conditions to apply filters.
+
+Example:
+
+
+$query = Product::query();
+
+if ($request->has('name')) {
+    $query->where('name', 'like', '%' . $request->name . '%');
+}
+
+if ($request->has('category')) {
+    $query->where('category', $request->category);
+}
+
+if ($request->has('price_min')) {
+    $query->where('price', '>=', $request->price_min);
+}
+
+$products = $query->get();
+9. You have a Laravel app where the user can upload images. What steps would you take to validate and store the images efficiently?
+
+Explanation:
+
+Use Laravel validation to ensure only valid images are uploaded.
+
+Store images in the storage folder and create symbolic links using php artisan storage:link.
+
+Use image resizing to optimize the file size before storing it.
+
+Example:
+
+
+$request->validate([
+    'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+]);
+
+$imagePath = $request->file('image')->store('images');
+10. How would you improve the performance of an application that frequently makes complex database queries?
+
+Explanation:
+
+Use database indexing to speed up query performance.
+
+Optimize query structure and avoid N+1 problems by using eager loading.
+
+Use pagination to load data in chunks rather than all at once.
+
+Consider caching the query results using Laravel's built-in caching methods.
+
+Example:
+
+
+$users = User::with('profile')->paginate(15); // Eager loading
